@@ -2,168 +2,7 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test "--coverage"
 
-FAIL src/nested.test.ts
-  ● Console
-
-    console.log
-      [
-        {
-          id: 1,
-          name: 'Question 1',
-          body: '',
-          type: 'multiple_choice_question',
-          options: [],
-          expected: '',
-          points: 1,
-          published: false
-        },
-        {
-          id: 47,
-          name: 'My New Question',
-          body: '',
-          type: 'multiple_choice_question',
-          options: [],
-          expected: '',
-          points: 1,
-          published: false
-        },
-        {
-          id: 2,
-          name: 'Question 2',
-          body: '',
-          type: 'short_answer_question',
-          options: [],
-          expected: '',
-          points: 1,
-          published: false
-        }
-      ]
-
-      at editOption (src/nested.ts:273:13)
-
-    console.log
-      NEW OPTION
-
-      at editOption (src/nested.ts:274:13)
-
-    console.log
-      1
-
-      at editOption (src/nested.ts:275:13)
-
-    console.log
-      [
-        {
-          id: 1,
-          name: 'Question 1',
-          body: '',
-          type: 'multiple_choice_question',
-          options: [],
-          expected: '',
-          points: 1,
-          published: false
-        },
-        {
-          id: 47,
-          name: 'My New Question',
-          body: '',
-          type: 'multiple_choice_question',
-          options: [],
-          expected: '',
-          points: 1,
-          published: false
-        },
-        {
-          id: 2,
-          name: 'Question 2',
-          body: '',
-          type: 'short_answer_question',
-          options: [],
-          expected: '',
-          points: 1,
-          published: false
-        }
-      ]
-
-      at editOption (src/nested.ts:299:13)
-
-  ● Testing the Question[] functions › Testing the editOption function
-
-    expect(received).toEqual(expected) // deep equality
-
-    - Expected  - 3
-    + Received  + 1
-
-    @@ -2,13 +2,11 @@
-        Object {
-          "body": "",
-          "expected": "",
-          "id": 1,
-          "name": "Question 1",
-    -     "options": Array [
-    -       "NEW OPTION",
-    -     ],
-    +     "options": Array [],
-          "points": 1,
-          "published": false,
-          "type": "multiple_choice_question",
-        },
-        Object {
-
-      895 |
-      896 |     test("Testing the editOption function", () => {
-    > 897 |         expect(editOption(BLANK_QUESTIONS, 1, -1, "NEW OPTION")).toEqual([
-          |                                                                  ^
-      898 |             {
-      899 |                 id: 1,
-      900 |                 name: "Question 1",
-
-      at Object.<anonymous> (src/nested.test.ts:897:66)
-
-  ● Testing the Question[] functions › Testing the duplicateQuestionInArray function
-
-    expect(received).toEqual(expected) // deep equality
-
-    - Expected  - 4
-    + Received  + 4
-
-    @@ -1,21 +1,21 @@
-      Array [
-        Object {
-          "body": "",
-          "expected": "",
-    -     "id": 1,
-    -     "name": "Question 1",
-    +     "id": 27,
-    +     "name": "Copy of Question 1",
-          "options": Array [],
-          "points": 1,
-          "published": false,
-          "type": "multiple_choice_question",
-        },
-        Object {
-          "body": "",
-          "expected": "",
-    -     "id": 27,
-    -     "name": "Copy of Question 1",
-    +     "id": 1,
-    +     "name": "Question 1",
-          "options": Array [],
-          "points": 1,
-          "published": false,
-          "type": "multiple_choice_question",
-        },
-
-      1089 |
-      1090 |     test("Testing the duplicateQuestionInArray function", () => {
-    > 1091 |         expect(duplicateQuestionInArray(BLANK_QUESTIONS, 1, 27)).toEqual([
-           |                                                                  ^
-      1092 |             {
-      1093 |                 id: 1,
-      1094 |                 name: "Question 1",
-
-      at Object.<anonymous> (src/nested.test.ts:1091:66)
-
+PASS src/nested.test.ts
 PASS src/arrays.test.ts
 PASS src/objects.test.ts
 PASS src/HtmlCss.test.tsx
@@ -173,20 +12,20 @@ PASS src/App.test.tsx
 ----------------|---------|----------|---------|---------|-------------------
 File            | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ----------------|---------|----------|---------|---------|-------------------
-All files       |    98.5 |    94.28 |     100 |   98.46 |                   
- src            |    98.5 |    94.28 |     100 |   98.46 |                   
+All files       |     100 |    95.94 |     100 |     100 |                   
+ src            |     100 |    95.94 |     100 |     100 |                   
   App.tsx       |     100 |      100 |     100 |     100 |                   
   arrays.ts     |     100 |      100 |     100 |     100 |                   
   functions.ts  |     100 |      100 |     100 |     100 |                   
-  nested.ts     |   96.51 |    80.95 |     100 |   96.51 | 252-255           
+  nested.ts     |     100 |       88 |     100 |     100 | 202-229,308       
   objects.ts    |     100 |      100 |     100 |     100 |                   
  src/interfaces |       0 |        0 |       0 |       0 |                   
   answer.ts     |       0 |        0 |       0 |       0 |                   
   question.ts   |       0 |        0 |       0 |       0 |                   
 ----------------|---------|----------|---------|---------|-------------------
 
-Test Suites: 1 failed, 6 passed, 7 total
-Tests:       2 failed, 47 passed, 49 total
+Test Suites: 7 passed, 7 total
+Tests:       49 passed, 49 total
 Snapshots:   0 total
-Time:        5.327 s
+Time:        6.263 s
 Ran all test suites.
