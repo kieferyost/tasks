@@ -1,8 +1,12 @@
 import React from "react";
 import "./App.css";
-<<<<<<< HEAD
 import { Button, Col, Container, Row } from "react-bootstrap";
-
+import { ChangeType } from "./components/ChangeType";
+import { RevealAnswer } from "./components/RevealAnswer";
+import { StartAttempt } from "./components/StartAttempt";
+import { TwoDice } from "./components/TwoDice";
+import { CycleHoliday } from "./components/CycleHoliday";
+import { Counter } from "./components/Counter";
 function App(): JSX.Element {
     return (
         <>
@@ -32,18 +36,6 @@ function App(): JSX.Element {
                         regret looking it up)
                     </li>
                 </ol>
-                {/* <h3>Alfie&apos;s Favorite Things:</h3>
-                <ol>
-                    <li>Food</li>
-                    <li>Receiving pets</li>
-                    <li>Being lazy</li>
-                </ol>
-                <h4>Maggie&apos;s Favorite Things:</h4>
-                <ol>
-                    <li>Cuddling</li>
-                    <li>Playing with her frisbee</li>
-                    <li>Ripping the bark off of trees in the backyard</li>
-                </ol> */}
                 <Button onClick={() => console.log("Hello World!")}>
                     Log Hello World
                 </Button>
@@ -76,6 +68,18 @@ function App(): JSX.Element {
                         </Col>
                     </Row>
                 </Container>
+                <hr></hr>
+                <Counter></Counter>
+                <hr />
+                <RevealAnswer></RevealAnswer>
+                <hr />
+                <StartAttempt></StartAttempt>
+                <hr />
+                <TwoDice></TwoDice>
+                <hr />
+                <ChangeType></ChangeType>
+                <hr />
+                <CycleHoliday></CycleHoliday>
                 <p>
                     <br />
                     Edit <code>src/App.tsx</code> and save. This page will
@@ -83,34 +87,6 @@ function App(): JSX.Element {
                 </p>
             </div>
         </>
-=======
-import { ChangeType } from "./components/ChangeType";
-import { RevealAnswer } from "./components/RevealAnswer";
-import { StartAttempt } from "./components/StartAttempt";
-import { TwoDice } from "./components/TwoDice";
-import { CycleHoliday } from "./components/CycleHoliday";
-import { Counter } from "./components/Counter";
-
-function App(): JSX.Element {
-    return (
-        <div className="App">
-            <header className="App-header">
-                UD CISC275 with React Hooks and TypeScript
-            </header>
-            <hr></hr>
-            <Counter></Counter>
-            <hr />
-            <RevealAnswer></RevealAnswer>
-            <hr />
-            <StartAttempt></StartAttempt>
-            <hr />
-            <TwoDice></TwoDice>
-            <hr />
-            <ChangeType></ChangeType>
-            <hr />
-            <CycleHoliday></CycleHoliday>
-        </div>
->>>>>>> upstream/task-state
     );
 }
 
