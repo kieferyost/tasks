@@ -11,7 +11,7 @@ function ShoveBoxButton({ position, setPosition }: boxProps) {
     );
 }
 
-function MoveableBox({ position, setPosition }: boxProps): JSX.Element {
+function MoveableBox({ position }: boxProps): JSX.Element {
     return (
         <div
             data-testid="moveable-box"
