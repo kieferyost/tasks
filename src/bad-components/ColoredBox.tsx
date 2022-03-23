@@ -10,7 +10,6 @@ interface colorProps {
 }
 
 function ChangeColor({ colorIndex, setColorIndex }: colorProps): JSX.Element {
-    //const [colorIndex, setColorIndex] = useState<number>(DEFAULT_COLOR_INDEX);
     return (
         <Button onClick={() => setColorIndex((1 + colorIndex) % COLORS.length)}>
             Next Color
@@ -39,7 +38,7 @@ export function ColoredBox(): JSX.Element {
     return (
         <div>
             <h3>Colored Box</h3>
-            <span>The current color is: {COLORS[DEFAULT_COLOR_INDEX]}</span>
+            <span>The current color is: {COLORS[colorIndex]}</span>
             <div>
                 <ChangeColor
                     colorIndex={colorIndex}
