@@ -44,6 +44,7 @@ export function ChangeColor(): JSX.Element {
                 />
             ))}
             <br />
+            <span>You have chosen </span>
             <span
                 data-testid="colored-box"
                 style={{
@@ -56,7 +57,7 @@ export function ChangeColor(): JSX.Element {
                         ]
                 }}
             >
-                You have chosen {currentColor}
+                {currentColor}
             </span>
         </div>
     );
