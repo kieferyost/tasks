@@ -1,3 +1,5 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable no-extra-parens */
 /* eslint-disable indent */
 import React, { useState } from "react";
 import { Form } from "react-bootstrap";
@@ -25,30 +27,34 @@ export function EditMode(): JSX.Element {
                 />
             </div>
             <div>
-                {isEditing ? (
-                    <div>
-                        <Form.Group controlId="editingForm">
-                            <Form.Control
-                                type="string"
-                                value={name}
-                                placeholder="Enter name"
-                                onChange={(
-                                    event: React.ChangeEvent<HTMLInputElement>
-                                ) => setName(event.target.value)}
-                            />
-                        </Form.Group>
+                {
+                    isEditing ? (
+                        <div>
+                            <Form.Group controlId="editingForm">
+                                <Form.Control
+                                    type="string"
+                                    value={name}
+                                    placeholder="Enter name"
+                                    onChange={(
+                                        event: React.ChangeEvent<HTMLInputElement>
+                                    ) => setName(event.target.value)}
+                                />
+                            </Form.Group>
 
-                        <Form.Check
-                            type="checkbox"
-                            id="is-student-check"
-                            label="Student?"
-                            checked={isStudent}
-                            onChange={updateStudent}
-                        />
-                    </div>
-                ) : (
-                    ""
-                )}
+                            <Form.Check
+                                type="checkbox"
+                                id="is-student-check"
+                                label="Student?"
+                                checked={isStudent}
+                                onChange={updateStudent}
+                            />
+                        </div>
+                    // eslint-disable-next-line prettier/prettier
+                    ) : ( ""
+                        // eslint-disable-next-line prettier/prettier
+                )
+                    // eslint-disable-next-line prettier/prettier
+                }
             </div>
             <div>
                 {name}
