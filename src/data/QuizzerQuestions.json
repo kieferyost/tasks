@@ -1,0 +1,116 @@
+[
+    {
+            "title": "Math Quiz",
+            "description": "Quiz designed to test your math skills",
+            "numberOfQuestions": 4,
+            "id": 9508538,
+            "questions": [
+                {
+                    "name": "Addition Question",
+                    "body": "What is 62 + 135?",
+                    "points": 1,
+                    "type": "multiple_choice_question",
+                    "published": true,
+                    "options": [],
+                    "expected": "197"
+                },
+                {
+                    "name": "Subtraction Question",
+                    "body": "What is 394 - 287?",
+                    "points": 1,
+                    "type": "short_answer_question",
+                    "published": true,
+                    "options": [],
+                    "expected": "107"
+                },
+                {
+                    "name": "Multiplication Question",
+                    "body": "What is 11 x 18?",
+                    "points": 1,
+                    "type": "multiple_choice_question",
+                    "published": true,
+                    "options": [],
+                    "expected": "198"
+                },
+                {
+                    "name": "Division Question",
+                    "body": "What is 160 / 8?",
+                    "points": 1,
+                    "type": "multiple_choice_question",
+                    "published": true,
+                    "options": [],
+                    "expected": "20"
+                }
+            ]
+    },
+    {
+        "title": "Dog Quiz",
+        "description": "Quiz regardings dogs",
+        "numberOfQuestions": 3,
+        "id": 95088713459,
+        "questions": [
+            {
+                "name": "Smallest Dog Question",
+                "body": "Which breed is the smallest type of dog?",
+                "points": 1,
+                "type": "multiple_choice_question",
+                "published": true,
+                "options": ["Poodle", "Chihuahua", "Yorskhire terrier"],
+                "expected": "Chihuahua"
+            },
+            {
+                "name": "Slobber Question",
+                "body": "Which breed typically slobbers the most?",
+                "points": 1,
+                "type": "multiple_choice_question",
+                "published": true,
+                "options": ["Newfoundland", "English Bulldog", "Saint Bernard"],
+                "expected": "Saint Bernard"
+            },
+            {
+                "name": "Multiplication Question",
+                "body": "Are cats better than dogs?",
+                "points": 1,
+                "type": "short_answer_question",
+                "published": true,
+                "options": [],
+                "expected": "no"
+            }
+        ]
+},
+{
+    "title": "Music Quiz",
+    "description": "Quiz testing your music knowledge",
+    "numberOfQuestions": 3,
+    "id": 950887187439,
+    "questions": [
+        {
+            "name": "Lead Singer Question",
+            "body": "Who is the lead singer of the Rolling Stones?",
+            "points": 1,
+            "type": "multiple_choice_question",
+            "published": true,
+            "options": ["Mick Jagger", "Paul McCartney", "Freddia Mercury"],
+            "expected": "Mick Jagger"
+        },
+        {
+            "name": "Song Question",
+            "body": "What band performed the song \"Smells Like Teen Spirit\"?",
+            "points": 1,
+            "type": "short_answer_question",
+            "published": true,
+            "options": [],
+            "expected": "Nirvana"
+        },
+        {
+            "name": "Band Member Question",
+            "body": "What band is Vince Neil apart of?",
+            "points": 1,
+            "type": "multiple_choice_question",
+            "published": true,
+            "options": ["Led Zepellin", "AC/DC", "Motley Crue"],
+            "expected": "Motley Crue"
+        }
+    ]
+}
+]

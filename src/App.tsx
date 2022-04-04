@@ -1,5 +1,6 @@
-import React from "react";
+//import React from "react";
 import "./App.css";
+import React, { useState } from "react";
 import { ChangeType } from "./components/ChangeType";
 import { RevealAnswer } from "./components/RevealAnswer";
 import { StartAttempt } from "./components/StartAttempt";
@@ -15,8 +16,16 @@ import { GiveAttempts } from "./form-components/GiveAttempts";
 import { EditMode } from "./form-components/EditMode";
 import { MultipleChoiceQuestion } from "./form-components/MultipleChoiceQuestion";
 import { ChangeColor } from "./form-components/ChangeColor";
+//import { Quizzer } from "./quizzer/Quizzer";
+//import quizes from "./data/QuizzerQuestions.json";
+//import { QuizzerQuizes } from "./quizzer/QuizzerInterfaces/QuizzerQuizes";
+
+/**const QUIZES = quizes.map(
+    (quiz: QuizzerQuizes): QuizzerQuizes => ({ ...quiz })
+);*/
 
 function App(): JSX.Element {
+    //const [quiz, setQuiz] = useState<QuizzerQuizes[]>(QUIZES);
     return (
         <>
             <div className="App">
@@ -25,6 +34,7 @@ function App(): JSX.Element {
                         Hello World and CISC275! Welcome to my website
                     </header>
                 </div>
+                <img src="https://i.postimg.cc/brRSs8dB/IMG-1734.jpg"></img>
                 <hr></hr>
                 <CheckAnswer expectedAnswer="42"></CheckAnswer>
                 <hr></hr>
